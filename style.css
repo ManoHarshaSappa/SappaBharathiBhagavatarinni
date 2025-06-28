@@ -1,0 +1,297 @@
+:root {
+  --bg-dark: #121212;
+  --bg-box: #1f1f1f;
+  --text-primary: #ffffff;
+  --text-secondary: #bbbbbb;
+  --accent: gold;
+  --font-main: 'Poppins', sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--bg-dark);
+  color: var(--text-primary);
+  font-family: var(--font-main);
+}
+
+/* Linktree Profile Container */
+.linktree-container {
+  padding: 10px 40px;
+  border-radius: 16px;
+  text-align: center;
+
+}
+
+/* Profile Image */
+.lt-profile-img {
+  width: 120px;
+  border-radius: 100px;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.08);
+  margin-bottom: 16px;
+}
+
+/* Profile Title */
+.lt-profile h2 {
+  font-size: 1.6rem;
+  color: var(--accent);
+  margin-bottom: 8px;
+}
+
+.lt-profile p {
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+  margin-bottom: 20px;
+}
+
+/* Links */
+.lt-links {
+  flex-direction: column;
+  gap: 14px;
+  margin-top: 20px;
+  padding: 0 20px;
+}
+
+/* Each Link */
+.lt-link {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 12px 20px;
+  background-color: #2a2a2a;
+  border-radius: 10px;
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  transition: background-color 0.3s ease;
+}
+
+.lt-link img {
+  width: 24px;
+  height: 24px;
+  margin-right: 12px;
+}
+
+.lt-link:hover {
+  background-color: #3b3b3b;
+}
+
+/* Social Icons in Footer/Links */
+.lt-socials {
+  margin-top: 24px;
+}
+
+.lt-socials a {
+  font-size: 22px;
+  color: #ccc;
+  margin: 0 10px;
+  transition: color 0.3s ease;
+}
+
+.lt-socials a:hover {
+  color: var(--accent);
+}
+
+/* PROFILE SECTION */
+.profile-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 40px;
+  background-color: var(--bg-box);
+  padding: 40px;
+  border-radius: 16px;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.05);
+  max-width: 1200px;
+  margin: 0px auto;
+  min-height: 280px;
+}
+
+.profile-text {
+  flex: 1 1 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
+}
+
+.profile-text h1 {
+  font-size: 2rem;
+  color: var(--accent);
+  margin-bottom: 16px;
+}
+
+.profile-text p {
+  font-size: 1rem;
+  margin-bottom: 10px;
+  color: var(--text-primary);
+  line-height: 1.6;
+}
+
+.info p {
+  font-size: 1rem;
+  color: var(--text-secondary);
+  margin-bottom: 6px;
+}
+
+.socials {
+  margin-top: 16px;
+}
+
+.socials a {
+  color: #ccc;
+  font-size: 20px;
+  margin-right: 15px;
+  transition: color 0.3s ease;
+}
+
+.socials a:hover {
+  color: var(--accent);
+}
+
+.profile-image {
+  flex: 1 1 35%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.profile-image img {
+  width: 220px;
+  height: auto;
+  box-shadow: 0 0 12px rgba(255, 255, 255, 0.08);
+  margin: 0 auto 10px auto;
+  object-fit: cover;
+}
+
+.subtitle-name {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--text-secondary);
+  margin-top: 6px;
+}
+
+/* MOBILE PROFILE */
+@media (max-width: 768px) {
+  .profile-container {
+    flex-direction: column;
+    padding: 24px;
+    gap: 20px;
+  }
+
+  .profile-text {
+    flex: unset;
+    font-size: 0.85rem;
+  }
+
+  .profile-text h1 {
+    font-size: 1.5rem;
+    margin-bottom: 12px;
+  }
+
+  .profile-text p,
+  .info p,
+  .subtitle-name {
+    font-size: 0.9rem;
+    line-height: 1.4;
+  }
+
+  .info {
+    margin-bottom: 12px;
+  }
+
+  .socials {
+    margin-top: 10px;
+  }
+
+  .socials a {
+    font-size: 18px;
+    margin: 0 6px;
+  }
+
+  .profile-image {
+    flex: unset;
+  }
+
+  .profile-image img {
+    width: 160px;
+    border-radius: 10px;
+  }
+
+  .subtitle-name {
+    font-size: 0.85rem;
+    margin-top: 6px;
+  }
+}
+
+/* === NEW: THEMED SECTION STYLES === */
+/* Wrapper for general section titles (like Famous Harikatha Artists) */
+
+
+/*    */
+.lt-section {
+  max-width: 1200px;
+  margin: 20px auto;
+
+}
+
+.lt-section-box {
+  display: flex;
+  flex-direction: column;           /* Stack English above Telugu */
+  justify-content: center;
+  align-items: center;
+  background-color: var(--bg-box);
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.05);
+  color: #FFD700;                   /* Yellow */
+  font-weight: bold;
+  font-family: Arial, sans-serif;
+  font-size: 1.1rem;
+  min-height: 80px;
+  text-align: center;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  text-decoration: none;
+}
+
+.lt-section-box:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 0 25px rgba(255, 215, 0, 0.12);
+}
+
+/* Bilingual Titles */
+.section-title-en {
+  font-size: 16px;
+  color: var(--accent); /* Matches your theme */
+}
+
+.section-title-te {
+  font-size: 14px;
+  color: var(--text-secondary);
+  font-family: 'Noto Sans Telugu', sans-serif;
+}
+
+
+
+
+
+/*  About About About About About About About About About About About About About About About About About About About About  sections here */
+
+
+.section-title-en {
+  font-weight: 600;
+  font-size: 1.1rem;
+  color: var(--accent);
+}
+
+.section-title-te {
+  font-size: 0.95rem;
+  color: var(--text-secondary);
+}
+
