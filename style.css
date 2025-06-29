@@ -176,23 +176,38 @@ body {
   color: var(--text-secondary);
   margin-top: 6px;
 }
-
-/* MOBILE PROFILE */
+/* ===== MOBILE PROFILE STYLES (Centered) ===== */
 @media (max-width: 768px) {
+  .linktree-container {
+    display: flex;
+    justify-content: center;   /* Center the whole section */
+    padding: 20px;
+  }
+
   .profile-container {
+    display: flex;
     flex-direction: column;
+    align-items: center; /* ✅ center everything horizontally */
     padding: 24px;
     gap: 20px;
+    background-color: #111;
+    border-radius: 16px;
+    color: white;
+    font-size: 0.85rem;
+    text-align: center; /* ✅ center all text */
   }
 
   .profile-text {
-    flex: unset;
+    flex: none;
     font-size: 0.85rem;
+    width: 100%;
   }
 
   .profile-text h1 {
     font-size: 1.5rem;
     margin-bottom: 12px;
+    color: #FFD700;
+    text-align: center;
   }
 
   .profile-text p,
@@ -200,6 +215,7 @@ body {
   .subtitle-name {
     font-size: 0.9rem;
     line-height: 1.4;
+    margin: 4px 0;
   }
 
   .info {
@@ -208,27 +224,43 @@ body {
 
   .socials {
     margin-top: 10px;
+    text-align: center;
   }
 
   .socials a {
     font-size: 18px;
     margin: 0 6px;
+    color: white;
+    transition: color 0.3s;
+  }
+
+  .socials a:hover {
+    color: #FFD700;
   }
 
   .profile-image {
-    flex: unset;
+    text-align: center;
   }
 
   .profile-image img {
     width: 160px;
     border-radius: 10px;
+    box-shadow: 0 0 8px rgba(255, 255, 255, 0.08);
   }
 
   .subtitle-name {
     font-size: 0.85rem;
     margin-top: 6px;
+    color: #ccc;
   }
 }
+
+
+
+
+
+
+
 
 /* === NEW: THEMED SECTION STYLES === */
 /* Wrapper for general section titles (like Famous Harikatha Artists) */
